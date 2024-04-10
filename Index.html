@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- METADATA GOES HERE -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="style.css" rel="stylesheet">
+
+    <!-- BOOTSTRAP 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- CHARTJS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js?v=1403"></script>
+
+
+</head>
+
+<div class="container py-5">
+
+    <div class="row">
+        <div class="col pt-4 pb-3">
+            <h1 class="text-center text-danger">Ontario Housing Market Report</h1>
+        </div>
+    </div>
+
+    <div class="row pt-4 pb-5">
+        <div class="col">
+            <div class="card bg-light border-0">
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li>
+                            <h4><b>Market Report Summary for December 2023</b></h4>
+                            <ul>
+                                <li>1. Average home prices in Ontario increased by 5% year-over-year to reach $853,915.
+                                </li>
+                                <li>2. Greater Toronto Area home prices increased by 3% year-over-year to $1,084,692.
+                                </li>
+                                <li>3. City of Toronto home prices increased by 4% year-over-year to $1,062,914.</li>
+                                <li>4. Ottawa home prices increased by 4% year-over-year to $632,487. </li>
+                                <li>5. Mississauga home prices decreased by 3% year-over-year to $951,608.</li>
+                                <li>6. Brampton home prices increased by 1% year-over-year to $987,085.</li>
+                                <li>7. Hamilton home prices increased by 1% year-over-year to $760,376.</li>
+                                <li> 8. February 5, 2024 Update: Today’s Lowest mortgage rates in Ontario is 4.74% for
+                                    5-Year Fixed </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col pt-5 pb-3">
+            <h2 class="text-center">Home Prices in Ontario for December 2023
+        </div>
+    </div>
+
+    <div class="row pb-5">
+        <div class="col-sm-3">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="text-center">$853,915</h4>
+                    <p class="text-center">Avg. Sold Price</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="text-center">2% Increased</h4>
+                    <p class="text-center">Monthly change</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="text-center">0.3% Increased</h4>
+                    <p class="text-center">Quarterly change</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="text-center">5% Increased</h4>
+                    <p class="text-center">Annual change
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col pt-5 pb-2 mt-2">
+            <h2 class="text-center">Historical Average Home Prices in Ontario</h2>
+        </div>
+    </div>
+
+    <div class="row  mt-2">
+        <div class="col-12 mb-3 mt-3">
+            <div>
+                <canvas id="myChart5"></canvas>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row pt-5">
+        <div class="col pt-5 pb-3">
+            <h2 class="text-center">Ontario Housing Market as of December 2023</h2>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col mt-2 mb-5 mr-4">
+            <p>Ontario’s housing market faced a slow 2023 as the province ended the year with the lowest number ofannual
+                sales since 2001. While Ontario’s December home sales are up 2.4% compared to December 2022,sales were
+                well below the 10-year average for the month of December, with 7,723 sales in December 2023.</p>
+            
+            <p>The average Ontario home sold price in   December 2023 saw a strong increase of 5% from December
+                2022,bringing the average house price in Ontario to $853,915. That’s up 2.4% from last month. In
+                contrast,the annual 2023 average price came in at $872,312, a 6% decline from 2022’s annual average
+                price.
+                Looking at another measure of prices, the benchmark home price for a "typical" home in Ontario was
+                $851,000, down 1.2% month-over-month and down 0.5% from last year.</p>
+
+            <p>Nationally, Canada's housing market is seeing similar price gains, with the national average price
+                experiencing an increase of 5% year-over-year, at $657,145 in December 2023, which is also a 2% monthly
+                increase.</p>
+
+            <p>There was quite a positive upswing in active residential listings, which increased by 19% from December
+                2022 to 30,100 – the highest number of active listings in five years for December. Meanwhile, new
+                residential listings dropped slightly, with 8,960 new listings, a decrease of 6% from December 2022.</p>
+
+            <p>The sales-to-new-listings ratio (SNLR) in December 2023 was recorded at 86%. This ratio represents a
+                seller’s market, which has an SNLR of over 60%, and indicates that there is more buyer demand than
+                seller supply in the housing market. However, the SNLR typically spikes in December as sellers hold off
+                on listing their homes.</p>
+        </div>
+
+        <div class="col mt-2 mb-5 ml-4">
+            <img src="https://wowa.ca/_next/image?url=%2Fstatic%2Fimg%2Fwahi-maps%2Fwahi-ontario-map-desktop-dec.webp&w=1920&q=90" class="img-fluid" alt="...">
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col pb-3">
+            <h2 class="text-center">Ontario: Seller’s or Buyer’s Markets?</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead>
+                    <tr class="table-primary">
+                        <th scope="col">City</th>
+                        <th scope="col">Sales-to-New-Listings Ratio(SNLR)</th>
+                        <th scope="col">Last Month’s(SNLR)</th>
+                        <th scope="col">Change</th>
+                        <th scope="col">Market Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-warning">
+                        <th scope="col">Toronto</th>
+                        <td class="table-warning">89%</td>
+                        <td class="table-warning">40%</td>
+                        <td class="table-warning">Increased</td>
+                        <td class="table-warning">Seller's Market</td>
+                    </tr>
+
+                    <tr class="table-warning">
+                        <th scope="col">Mississauga</th>
+                        <td class="table-warning">80%</td>
+                        <td class="table-warning">41%</td>
+                        <td class="table-warning">Increased</td>
+                        <td class="table-warning">Seller's Market</td>
+                    </tr>
+
+                    <tr class="table-warning">
+                        <th scope="col">Brampton</th>
+                        <td class="table-warning">84%</td>
+                        <td class="table-warning">37%</td>
+                        <td class="table-warning">Increased</td>
+                        <td class="table-warning">Seller's Market</td>
+                    </tr>
+
+                    <tr class="table-warning">
+                        <th scope="col">Oshawa</th>
+                        <td class="table-warning">99%</td>
+                        <td class="table-warning">42%</td>
+                        <td class="table-warning">Increased</td>
+                        <td class="table-warning">Seller's Market</td>
+                    </tr>
+
+                    <tr class="table-warning">
+                        <th scope="col">Hamilton</th>
+                        <td class="table-warning">96%</td>
+                        <td class="table-warning">46%</td>
+                        <td class="table-warning">Increased</td>
+                        <td class="table-warning">Seller's Market</td>
+                    </tr>
+
+                    <tr class="table-warning">
+                        <th scope="col">Ottawa</th>
+                        <td class="table-warning">108%</td>
+                        <td class="table-warning">51%</td>
+                        <td class="table-warning">Increased</td>
+                        <td class="table-warning">Seller's Market</td>
+                    </tr>
+
+                    <tr class="table-warning">
+                        <th scope="col">London</th>
+                        <td class="table-warning">87%</td>
+                        <td class="table-warning">45%</td>
+                        <td class="table-warning">Increased</td>
+                        <td class="table-warning">Seller's Market</td>
+                    </tr>
+
+                    <tr class="table-warning">
+                        <th scope="col">Kitchener-Waterloo Region</th>
+                        <td class="table-warning">99%</td>
+                        <td class="table-warning">51%</td>
+                        <td class="table-warning">Increased</td>
+                        <td class="table-warning">Seller's Market</td>
+                    </tr>
+
+                    <tr class="table-danger">
+                        <th scope="col">Ontario</th>
+                        <td class="table-danger"><b>86%</b></td>
+                        <td class="table-danger"><b>44%</b></td>
+                        <td class="table-danger"><b>Increased</b></td>
+                        <td class="table-danger"><b>Seller's Market</b></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <div class="row pb-5">
+        <div class="col pt-2 pb-3">
+            <p>Looking at Ontario’s major urban housing markets in terms of annual price changes for December 2023, many
+                cities are still seeing higher home prices compared to last year. The exception is Oshawa and
+                Mississauga, with Oshawa’s housing market seeing prices 6% lower compared to the same month last year,
+                while Mississauga home prices are down 3% year-over-year.</p>
+            <p>Many urban housing markets in Ontario are still seeing year-over-year increases in average home prices,
+                such as Brampton (+0.5%), Kitchener-Waterloo-Cambridge (+3%), and Ottawa (+4%). In London, home prices
+                are up 2.5% year-over-year. The City of Toronto has seen prices increase 4% year-over-year.</p>
+            <p>Overall, the Ontario housing market continues to experience a mix of trends and varying levels of
+                activity, with some regions seeing modest growth while others are experiencing declines.</p>
+        </div>
+    </div>
+
+    <div class="row pt-4">
+        <div class="col pb-3">
+            <h2 class="text-center">Housing Markets of Major Cities in Ontario</h2>
+        </div>
+    </div>
+
+    <div class="row pb-5">
+        <div class="col">
+            <div>
+                <canvas id="myChart"></canvas>
+                <h6 class="text-center pt-3">Average Home Prices - December 2023<h6>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row pt-5">
+        <div class="col pb-3">
+            <h2 class="text-center">Ontario Housing Market Forecast for 2023</h2>
+        </div>
+    </div>
+
+    <div class="row pb-5">
+        <div class="col pt-2 pb-3">
+            <p>Lontario’s housing market saw a sharp correction in prices in 2022 as Bank of Canada rate hikes brought
+                about rising interest rates, stifling demand. Looking forward, Ontario’s housing market forecast for
+                2023 depends on a few factors.</p>
+
+            <p>A pause in Bank of Canada rate hikes, something that is widely predicted as inflation eases off and as
+                the risk of a recession increases, might even translate into rate cuts this year. Immigration, looking
+                mainly at newcomers and international students, has also been returning to normal levels. More people
+                looking for a home will boost demand. Met with a shortage in housing inventory, a surge in buyers will
+                introduce upward pressure on housing prices.</p>
+
+            <p>The federal government banned foreign buyers from buying a home in Canada, starting in 2023. Should
+                interest rates continue to increase, demand will be crippled further.</p>
+        </div>
+    </div>
+
+    <div class="row pt-4">
+        <div class="col pb-5">
+            <h2 class="text-center">Ontario Housing Market Forecast 2023 and 2024</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">           
+            <div>
+                <canvas id="myChart2"></canvas>
+                <p class="text-center mt-3">2023 Price Growth</p>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div>
+                <canvas id="myChart3"></canvas>
+                <p class="text-center mt-3">2024 Price Growth</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    </body>
+
+</html>
