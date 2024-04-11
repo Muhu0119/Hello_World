@@ -1,0 +1,56 @@
+body {
+    /* CODE GOES HERE */
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container
+{
+    width: 400px;
+    margin: auto;
+}
+
+#header
+{
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(135, 142, 142);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#media
+{
+    display: flex;
+}
+
+#video
+{
+    width: 190px;
+    margin-right: 20px;
+
+}
+
+#image,#image>img
+{
+    width: 190px;
+
+}
+
+#text
+{
+    font-size: 12px;
+}
+
+#footer
+{
+    background-color: rgb(135, 142, 142);
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;    
+}
+
+#footer>a
+{
+    color: blue;
+}
